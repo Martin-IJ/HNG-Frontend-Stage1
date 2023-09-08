@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HNG Project - Stage 1</title>
+    <title>Martins HNG Project</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -11,25 +11,29 @@
       <h1 id="slackUserName" data-testid="slackUserName">Martins Ohez</h1>
       <img
         id="slackDisplayImage"
-        src="https://ca.slack-edge.com/T05FFAA91JP-U05R76F2TQV-47a35236c003-512"
+        src="./image/IMG_1467.jpg"
         alt="Martins Ohez"
         data-testid="slackDisplayImage"
       />
-      <div class="time-cont">
-        <span>Day</span>|
-        <p id="currentDayOfTheWeek" data-testid="currentDayOfTheWeek"></p>
+      <div class="time-cont" data-testid="currentDayOfTheWeek">
+        <span>Day</span>
+        <p id="currentDayOfTheWeek"></p>
       </div>
-      <div class="time-cont">
-        <span>UTC Time</span>|
-        <p id="currentUTCTime" data-testid="currentUTCTime"></p>
+      <div class="time-cont" data-testid="currentUTCTime">
+        <span>UTC Time</span>
+        <p id="currentUTCTime"></p>
       </div>
-      <div class="time-cont">
-        <span>My Track</span>|
-        <p id="myTrack" data-testid="myTrack">Frontend</p>
+      <div class="time-cont" data-testid="myTrack">
+        <span>My Track</span>
+        <p id="myTrack">Frontend</p>
       </div>
-      <a id="githubURL" href="https://github.com/Martin-IJ/HNG-Frontend-Stage1.git" target="_blank" data-testid="githubURL"
-        >GitHub</a
-      >
+      <a
+        data-testid="githubURL"
+        id="githubURL"
+        href="https://github.com/Martin-IJ/HNG-Frontend-Stage1"
+        target="_blank"
+        >GitHub URL
+      </a>
     </div>
 
     <script src="./app.js"></script>
