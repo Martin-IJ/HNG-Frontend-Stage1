@@ -1,23 +1,40 @@
-const currentDay = document.getElementById("currentDay");
+const day = document.getElementById('currentDay');
+const timeInUTC = document.getElementById('utcTime');
+const timeInMS = document.getElementById('currentTime');
 
-const date = new Date();
 
-const daysOfWeek = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
+updateUTCTime();
 
-const weekDays = daysOfWeek[date.getDay()];
-currentDay.innerHTML = weekDays;
 
-const UTC_Time = document.getElementById("currentTime");
-const currentTime = new Date().getTime();
+function getCurrentDayOfTheWeek() {
+    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-UTC_Time.innerHTML = `${new Date(
-  currentTime
-).toLocaleString()} ${currentTime}`;
+    const today = new Date();
+    const dayIndex = today.getDay();
+    console.log(today.getMilliseconds())
+    return daysOfWeek[dayIndex];
+}
+
+
+function updateUTCTime() {
+    const utcTime = new Date().toUTCString();
+    return utcTime
+}
+
+function updateUTCTimeMS() {
+    return utcTime
+}
+
+day.textContent = getCurrentDayOfTheWeek()
+timeInUTC.textContent = updateUTCTime()
+
+setInterval(() => {
+    const utcTime = new Date();
+    timeInUTC.textContent = utcTime.toUTCString()
+
+}, 1000)
+
+setInterval(() => {
+    const milliseconds = Date.now();
+    timeInMS.textContent = milliseconds
+}, 1)

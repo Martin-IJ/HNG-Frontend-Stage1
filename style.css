@@ -11,6 +11,8 @@ body {
   width: 100vw;
   display: flex;
   padding: 0 10px;
+  background: linear-gradient(to bottom, rgba(19, 123, 208, 0.786), white)
+    no-repeat center center / contain;
 }
 
 .container {
@@ -22,7 +24,7 @@ body {
   border-radius: 10px;
   background-color: #032955;
   color: #fff;
-  max-width: 500px;
+  max-width: 450px;
   width: 100%;
   font-size: 1.2rem;
   height: 80vh;
@@ -35,21 +37,32 @@ body {
 
 .slackImage {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border: 6px solid #e0e0e0;
+  box-shadow: 10px 10px 9px -10px rgba(255, 255, 255, 0.2);
 }
 
 #currentDay {
-  padding-left: 10px;
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 #currentTime {
-  padding-left: 10px;
+  font-weight: 500;
+}
+
+#utcTime{
+  width: 200px;
+  padding-top: 10px;
 }
 
 #track {
-  padding-left: 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 a {

@@ -7,27 +7,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 class="slackName" data-testid="slackUserName">Martins Ohez</h1>
-      <img
-        class="slackImage"
-        src="./image/IMG_1467.jpg"
-        alt="Martins Ohez"
-        data-testid="slackDisplayImage"
-      />
-      <p data-testid="currentDayOfTheWeek">
-        Day:
-        <span id="currentDay"> </span>
-      </p>
-      <p data-testid="currentUTCTime">
-        UTC Time:
-        <span id="currentTime"> </span>
-      </p>
-      <p data-testid="myTrack">My Track: <span id="track"> Frontend </span></p>
+    <main class="container">
+      <h1 data-testid="slackUserName" class="slackName">Martins Ohez</h1>
+
+      <img data-testid="slackDisplayImage" class="slackImage" src="./image/IMG_1467.jpg"
+          alt="Martins Ohez">
+
+      <div class="day_Time">
+          <p data-testid="currentDayOfTheWeek" id="currentDay"></p>
+          <p data-testid="currentUTCTime" class="time" id="currentTime"></p>
+          <p class="time" id="utcTime"></p>
+      </div>
+
+      <p data-testid="myTrack" id="track">Frontend </p>
       <a href="https://github.com/Martin-IJ/HNG-Frontend-Stage1" target="_blank"
         ><button data-testid="githubURL" class="github">GitHub</button>
       </a>
-    </div>
+  </main>
 
     <script src="app.js"></script>
   </body>
