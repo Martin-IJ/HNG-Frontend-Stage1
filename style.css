@@ -39,7 +39,7 @@ body {
   border-radius: 50%;
   width: 250px;
   height: 250px;
-  border: 6px solid #e0e0e0;
+  border: 7px solid #e0e0e0;
   box-shadow: 10px 10px 9px -10px rgba(255, 255, 255, 0.2);
 }
 
@@ -54,7 +54,7 @@ body {
   font-weight: 500;
 }
 
-#utcTime{
+#utcTime {
   width: 200px;
   padding-top: 10px;
 }
@@ -68,9 +68,10 @@ body {
 a {
   font-size: 18px;
   width: 100%;
+  text-decoration: none;
 }
 
-.github{
+.github {
   width: 50%;
   padding: 10px;
   background-color: #de5c3c;
