@@ -17,7 +17,7 @@ const dayOfWeek = daysOfWeek[date.getDay()];
 
 day.innerHTML = dayOfWeek;
 
-const currentUTCMilliseconds = new Date().getTime();
-UTC_time.innerHTML = `${new Date(
-  currentUTCMilliseconds
-).toLocaleString()}  ${currentUTCMilliseconds}`;
+setInterval(() => {
+  const currentUTCMilliseconds = new Date().getTime();
+  UTC_time.innerHTML = `${currentUTCMilliseconds}`;
+}, 1000);
