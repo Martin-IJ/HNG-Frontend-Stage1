@@ -24,55 +24,45 @@ body {
   color: #fff;
   max-width: 500px;
   width: 100%;
+  font-size: 1.2rem;
   height: 80vh;
   box-shadow: 10px 10px 9px -10px rgba(0, 0, 0, 0.6);
 }
 
-#slackUserName {
+.slackName {
   font-size: 2.5rem;
 }
 
-#slackDisplayImage {
+.slackImage {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   border: 6px solid #e0e0e0;
 }
 
-#currentDayOfTheWeek {
-  font-size: 1.3rem;
+#currentDay {
   padding-left: 10px;
 }
 
-.time-cont {
-  display: flex;
-  align-items: center;
-  font-size: 1.3rem;
-  width: 85%;
-  margin: 0 auto;
-}
-
-span {
-  width: 30%;
-  text-align: start;
-  border-right: 3px solid #fff;
-}
-
-.time-cont p{
-  text-align: start;
-}
-
-#currentUTCTime {
-  font-size: 1.3rem;
+#currentTime {
   padding-left: 10px;
 }
 
-#myTrack {
-  font-size: 1.3rem;
+#track {
   padding-left: 10px;
 }
 
-#githubURL {
-  color: #de5c3c;
+a {
   font-size: 18px;
+  width: 100%;
+}
+
+.github{
+  width: 50%;
+  padding: 10px;
+  background-color: #de5c3c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
 }

@@ -4,38 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Martins HNG Project</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <h1 id="slackUserName" data-testid="slackUserName">Martins Ohez</h1>
+      <h1 class="slackName" data-testid="slackUserName">Martins Ohez</h1>
       <img
-        id="slackDisplayImage"
+        class="slackImage"
         src="./image/IMG_1467.jpg"
         alt="Martins Ohez"
         data-testid="slackDisplayImage"
       />
-      <div class="time-cont" data-testid="currentDayOfTheWeek">
-        <span>Day</span>
-        <p id="currentDayOfTheWeek"></p>
-      </div>
-      <div class="time-cont" data-testid="currentUTCTime">
-        <span>UTC Time</span>
-        <p id="currentUTCTime"></p>
-      </div>
-      <div class="time-cont" data-testid="myTrack">
-        <span>My Track</span>
-        <p id="myTrack">Frontend</p>
-      </div>
-      <a
-        data-testid="githubURL"
-        id="githubURL"
-        href="https://github.com/Martin-IJ/HNG-Frontend-Stage1"
-        target="_blank"
-        >GitHub URL
+      <p data-testid="currentDayOfTheWeek">
+        Day:
+        <span id="currentDay"> </span>
+      </p>
+      <p data-testid="currentUTCTime">
+        UTC Time:
+        <span id="currentTime"> </span>
+      </p>
+      <p data-testid="myTrack">My Track: <span id="track"> Frontend </span></p>
+      <a href="https://github.com/Martin-IJ/HNG-Frontend-Stage1" target="_blank"
+        ><button data-testid="githubURL" class="github">GitHub</button>
       </a>
     </div>
 
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

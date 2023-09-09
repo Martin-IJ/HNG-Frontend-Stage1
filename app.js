@@ -1,4 +1,4 @@
-const currentDay = document.getElementById("currentDayOfTheWeek");
+const currentDay = document.getElementById("currentDay");
 
 const date = new Date();
 
@@ -15,9 +15,9 @@ const daysOfWeek = [
 const weekDays = daysOfWeek[date.getDay()];
 currentDay.innerHTML = weekDays;
 
-const UTC_Time = document.getElementById("currentUTCTime");
-const currentUTCTime = new Date().getTime();
+const UTC_Time = document.getElementById("currentTime");
+const currentTime = new Date().getTime();
 
 UTC_Time.innerHTML = `${new Date(
-  currentUTCTime
-).toLocaleString()} ${currentUTCTime}`;
+  currentTime
+).toLocaleString()} ${currentTime}`;
